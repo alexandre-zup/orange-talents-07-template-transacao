@@ -53,6 +53,18 @@ public class Transacao {
         return id;
     }
 
+    public BigDecimal getValor() {
+        return valor;
+    }
+
+    public Estabelecimento getEstabelecimento() {
+        return estabelecimento;
+    }
+
+    public LocalDateTime getEfetivadaEm() {
+        return efetivadaEm;
+    }
+
     @Override
     public String toString() {
         return new StringJoiner(", ", Transacao.class.getSimpleName() + "[", "]")
